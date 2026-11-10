@@ -1,9 +1,14 @@
-let nome;
-let ano;
-let idade;
+let nota1tri;
+let nota2tri;
+let resultado;
 
-console.log("Hello World!");
-alert("Olá! Seja bm-vindo!");
-nome = prompt("Digite seu nome:");
-alert("Tenha um bom dia, " + nome + ".")
-ano = Number(prompt(nome + ", em que ano você nasceu?" ));
+nota1tri = Number(prompt("Digite a nota do 1° trimestre"));
+nota2tri = Number(prompt("Digite a nota do 2° trimestre"));
+
+resultado = 180-(nota1tri+nota2tri);
+
+if(resultado <= 0){
+    alert("Parabéns! Você já foi aprovado por nota!!!");
+} else {
+    alert("Poxa, você precisa de " + resultado + " para ser aprovado");
+}
